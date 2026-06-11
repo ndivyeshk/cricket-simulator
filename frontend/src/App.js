@@ -32,7 +32,7 @@ function App() {
     setLoading(true);
     setResult(null);
     try {
-      const response = await axios.post("http://127.0.0.1:8000/simulate", {
+      const response = await axios.post("https://cricket-simulator-8sec.onrender.com/simulate", {
         target:       parseInt(target),
         overs_left:   parseInt(overs),
         wickets_left: parseInt(wickets),
